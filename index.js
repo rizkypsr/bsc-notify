@@ -54,7 +54,7 @@ factory.on("PairCreated", async (token0, token1, addressPair) => {
 
   const liquidityAmount = parseFloat(liquidity) / 1e18; // Assuming liquidity is in Wei
 
-  if (liquidityAmount === 0 || Number(liquidityAmount) < 20) {
+  if (liquidityAmount === 0 || Number(liquidityAmount) < 10) {
     return;
   }
 
